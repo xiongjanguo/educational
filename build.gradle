@@ -1,0 +1,28 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.3.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.educational'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile("mysql:mysql-connector-java:5.1.21")
+    compile("com.alibaba:druid-spring-boot-starter:1.1.10")
+    compile("com.baomidou:mybatis-plus:2.1.9")
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+    compile("com.baomidou:mybatisplus-spring-boot-starter:1.0.5")
+
+    compile("pub.codex:codex-apix:3.1.0")
+    compile("pub.codex:codex-index:3.1.0")
+    compile("pub.codex:codex-core-template-mybatis-plus:3.1.0")
+}

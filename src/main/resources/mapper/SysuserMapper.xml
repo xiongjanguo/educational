@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.educational.manage.db.mapper.SysuserMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.educational.manage.db.entity.SysuserEntity" id="sysuserMap">
+        <result property="id" column="Id"/>
+        <result property="classesid" column="classesid"/>
+        <result property="userstyleid" column="Userstyleid"/>
+        <result property="username" column="Username"/>
+        <result property="password" column="Password"/>
+        <result property="sex" column="Sex"/>
+        <result property="address" column="Address"/>
+        <result property="phone" column="Phone"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,19 @@
+package com.educational.manage;
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+import pub.codex.index.EnableCodexLeague;
+
+@EnableCodexLeague
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@ComponentScan(basePackages = {"com.educational.manage.**"})
+public class ManageApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ManageApplication.class, args);
+    }
+
+}
