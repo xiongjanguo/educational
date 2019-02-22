@@ -14,8 +14,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    compile('org.springframework.boot:spring-boot-devtools')
+
     compile("mysql:mysql-connector-java:5.1.21")
     compile("com.alibaba:druid-spring-boot-starter:1.1.10")
     compile("com.baomidou:mybatis-plus:2.1.9")
@@ -25,4 +27,12 @@ dependencies {
     compile("pub.codex:codex-apix:3.1.0")
     compile("pub.codex:codex-index:3.1.0")
     compile("pub.codex:codex-core-template-mybatis-plus:3.1.0")
+
+    compile('org.webjars:bootstrap:3.3.7-1')
+    compile('org.webjars:jquery:3.1.1')
+    compile('org.webjars.npm:vue:2.5.17')
+    compile('org.webjars.npm:vue-router:3.0.1')
+    compile('org.webjars.npm:vue-resource:1.5.1')
+    compile('org.webjars.npm:element-ui:2.4.8')
+
 }
